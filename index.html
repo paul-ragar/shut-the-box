@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <link rel="stylesheet" href="style.css"></link>
+
+    <meta charset="utf-8">
+    <title>Shut The Box</title>
+  </head>
+  <body ng-controller="mainCtrl">
+    <div class="body-container">
+      <div class="container">
+        <div class="top-container">
+          <button class="new-game" ng-click="newGame()" type="button" name="button">New Game</button>
+          <div class="number-container">
+            <div ng-click="sumCards(number.value, $index)" ng-repeat="number in numbers track by $index" class="{{number.class}}">
+              <p class="number-value">{{number.value}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="middle-container">
+          <div class="button-container">
+            <button class="roll-button" ng-show="rolled" ng-click="rollDice()" type="button" name="button">Roll Dice!</button>
+            <button ng-click="acceptTurn()" ng-hide="accept" class="accept-button" type="button" name="button">Accept Turn</button>
+          </div>
+          <div class="dice-container">
+            <div class="dice" ng-style="diOne">
+            </div>
+            <div class="dice" ng-style="diTwo">
+            </div>
+          </div>
+        </div>
+        <div class="winner-container">
+          <div class="winner-div" ng-show="win">Player {{winner}} Wins!!!</div>
+        </div>
+        <div class="bottom-container">
+          <button class="end-button" ng-click="endTurn()" type="button" name="button">End Turn</button>
+          <div class="score-board">
+            <div class="player-data" ng-repeat="player in players">
+              <p>{{player.name}}</p>
+              <div class="">Round One: {{player.roundOne}}</div>
+              <div class="">Round Two: {{player.roundTwo}}</div>
+              <div class="">Round Three: {{player.roundThree}}</div>
+              <div class="" ng-show="playerTotalScore">Total: {{player.total}}</div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js"></script>
+    <script src="./app.js"></script>
+    <script src="./controllers/mainCtrl.js"></script>
+    <script src="./mainService.js"></script>
+  </body>
+</html>

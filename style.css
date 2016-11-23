@@ -1,0 +1,211 @@
+.body-container {
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  background-image: url("http://4.bp.blogspot.com/-X6Di7CPFPz8/Up5yIqS_NdI/AAAAAAAACdA/DjKB8Ir399k/s1600/Walnut-Wood-Flooring-002.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.container {
+  /*height: 600px;
+  width: 1200px;*/
+  height: 90%;
+  width: 90%;
+  align-self: center;
+  background-image: url("http://www.walldevil.com/wallpapers/a52/wallpaper-textur-background-patterns-backgrounds-wallpapers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+.top-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new-game {
+  /*position: absolute;*/
+  width: 100px;
+  height: 45px;
+  /*top: 150px;
+  left: 60px;*/
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: rgba(240, 240, 240, .25);
+  border: solid 1px;
+  border-color: rgba(240, 240, 240, .7);
+  font-size: 15px;
+  color: rgba(240, 240, 240, .9);
+  outline: none;
+}
+
+.number-container {
+  width: 70%;
+  height: 200px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+}
+.number-cards {
+  width: 80px;
+  height: 120px;
+  background-image: url("http://www.pentalonline.com/images/slabs/onyx/ivoryOnyxLarge.jpg");
+  border-radius: 6px;
+  box-shadow: inset 0 0 10px black,
+    0 2px 10px rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+.number-value {
+  color: rgba(0, 0, 0, 0.8);
+}
+.selected-cards {
+  width: 80px;
+  height: 120px;
+  background-image: url("http://www.pentalonline.com/images/slabs/onyx/ivoryOnyxLarge.jpg");
+  border-radius: 6px;
+  box-shadow: inset 0 0 10px black,
+    0 0 20px rgba(255, 255, 255, .9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+.used-cards {
+  width: 80px;
+  height: 120px;
+  background-image: url("http://www.pentalonline.com/images/slabs/onyx/ivoryOnyxLarge.jpg");
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 10px black,
+    0 2px 10px rgba(0,0,0,.5),
+    inset 0 0 0 1000px rgba(73, 56, 39, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+.middle-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container {
+  width: 100px;
+}
+.roll-button {
+  /*position: absolute;*/
+  width: 100px;
+  height: 45px;
+  /*top: 300px;
+  left: 400px;*/
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: rgba(240, 240, 240, .25);
+  border: solid 1px;
+  border-color: rgba(240, 240, 240, .7);
+  font-size: 15px;
+  color: rgba(240, 240, 240, .9);
+  outline: none;
+}
+.accept-button {
+  /*position: absolute;*/
+  width: 100px;
+  height: 45px;
+  /*top: 300px;
+  left: 400px;*/
+  cursor: pointer;
+  background-color: rgba(240, 240, 240, .25);
+  border: solid 1px;
+  border-color: rgba(240, 240, 240, .7);
+  font-size: 15px;
+  color: rgba(240, 240, 240, .9);
+  border-radius: 3px;
+  outline: none;
+}
+.dice-container {
+  width: 170px;
+  height: 100px;
+  margin-left: 30px;
+  /*margin: auto;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.dice {
+  width: 75px;
+  height: 75px;
+}
+.bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-button {
+  /*position: absolute;*/
+  width: 100px;
+  height: 45px;
+  /*top: 480px;
+  left: 400px;*/
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: rgba(240, 240, 240, .25);
+  border: solid 1px;
+  border-color: rgba(240, 240, 240, .7);
+  font-size: 15px;
+  color: rgba(240, 240, 240, .9);
+  outline: none;
+}
+
+.winner-container {
+  width: 100%;
+  height: 30px;
+}
+.winner-div {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+.score-board {
+  height: 150px;
+  width: 320px;
+  /*margin: auto;*/
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 3px;
+  background-color: rgba(240, 240, 240, .25);
+  border: solid 1px;
+  border-color: rgba(240, 240, 240, .7);
+  font-size: 15px;
+  color: rgba(240, 240, 240, .9);
+  outline: none;
+}
+.player-data {
+width: 115px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+margin-left: 15px;
+margin-right: 25px;
+}
