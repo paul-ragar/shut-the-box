@@ -1,3 +1,3 @@
 # shut-the-box
 
-### <a name="https://paulragar.github.io/shut-the-box/"></a>
+[Play the game!](https://paulragar.github.io/shut-the-box)
